@@ -1,3 +1,9 @@
-# angular-Router
+## angular-Router
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-wqt2ri)
+# PT/BR
+Exercício de Rotas em WebApp Angular
+
+# EN/US
+Angular WebApp Routing Practice
+
+https://stackblitz.com/edit/angular-wqt2ri
