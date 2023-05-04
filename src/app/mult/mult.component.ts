@@ -1,12 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-tabuada',
-  templateUrl: './tabuada.component.html',
-  styleUrls: ['./tabuada.component.css'],
+  selector: 'app-mult',
+  standalone: true,
+  templateUrl: './mult.component.html',
+  styleUrls: ['./mult.component.css'],
+  imports: [CommonModule, FormsModule],
 })
-export class TabuadaComponent implements OnInit {
+export class MultComponent implements OnInit {
   n: number = 7;
 
   constructor() {}
@@ -21,7 +24,7 @@ export class TabuadaComponent implements OnInit {
     return arr;
   }
 
-  tabuar() {
+  multiply() {
     let arr = [];
     for (let i = 1; i <= 10; i++) {
       arr.push(this.n * i);

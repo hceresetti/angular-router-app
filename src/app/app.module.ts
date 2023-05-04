@@ -8,10 +8,10 @@ import { MultTableComponent } from './mult-table/mult-table.component';
 import { MultTableDetailsComponent } from './mult-table-details/mult-table-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { AndrebuenoComponent } from './andrebueno/andrebueno.component';
+import { HenryceresettiComponent } from './henryceresetti/henryceresetti.component';
 import { TimerComponent } from './timer/timer.component';
-import { TabuadaComponent } from './tabuada/tabuada.component';
 import { FormsModule } from '@angular/forms';
+import { MultComponent } from './mult/mult.component';
 
 @NgModule({
   imports: [
@@ -19,9 +19,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: AndrebuenoComponent },
+      { path: '', component: HenryceresettiComponent },
       { path: 'timer', component: TimerComponent },
-      { path: 'tabuada', component: TabuadaComponent },
+      { path: 'mult', component: MultComponent },
     ]),
   ],
   declarations: [
@@ -31,9 +31,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     MultTableComponent,
     MultTableDetailsComponent,
-    AndrebuenoComponent,
+    HenryceresettiComponent,
     TimerComponent,
-    TabuadaComponent,
   ],
   bootstrap: [RootComponent],
 })

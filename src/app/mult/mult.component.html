@@ -1,0 +1,16 @@
+<input type="number" [(ngModel)]="n" />
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Odd or even</th>
+  </tr>
+
+  <tr *ngFor="let n of multiply()">
+    <td>{{ n }}</td>
+    <td>
+      <span *ngIf="n % 2 == 0"> Odd </span>
+      <span *ngIf="n % 2 != 0"> Even </span>
+    </td>
+  </tr>
+</table>
