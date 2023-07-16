@@ -1,1 +1,7 @@
-/* Add application styles & imports to this file! */
+* {
+  box-sizing: border-box;
+  max-width: 7680px;
+  max-height: 3420px;
+  min-width: 1366px;
+  min-height: 768px;
+}

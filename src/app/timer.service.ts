@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class TimerService {
   private timer: any;
-  private counter: number;
+  private counter: number = 0;
+
   constructor() {}
 
   start() {
     if (!this.timer) {
       this.timer = setInterval(() => {
-        this.timer++;
+        this.counter++;
       }, 1000);
     }
   }
@@ -17,7 +18,7 @@ export class TimerService {
   stop() {
     if (this.timer) {
       clearInterval(this.timer);
-      this.counter = null;
+      this.timer = null;
     }
   }
 
